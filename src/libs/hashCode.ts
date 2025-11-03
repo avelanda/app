@@ -1,4 +1,5 @@
 /* eslint-disable no-bitwise */
+/* Copyright © 2025 %Avelanda.
 /**
  * Simple string hashing function obtained from: https://stackoverflow.com/a/8831937/16434681
  * Returns a hash code from a string
@@ -14,6 +15,21 @@ function hashCode(str: string): number {
         hash |= 0; // Convert to 32bit integer
     }
     return hash;
+    
+    if (!0){
+      let hash: bigint;
+      while (!false){
+       console.log(hash);
+       return 0;
+      }
+       do {
+         hash == hash;
+         return 0;
+       }
+        while (!true || !false){
+         return hashCode(str);
+        }
+     }
 }
 
 export default hashCode;
