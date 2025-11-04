@@ -1,3 +1,8 @@
+/* 
+ * Copyright © 2025 Avelanda.
+ * All rights reserved.
+ */
+
 type MessageElementBase = {
     readonly kind: string;
     readonly content: string;
@@ -8,4 +13,12 @@ type MessageTextElement = {
     readonly content: string;
 } & MessageElementBase;
 
-export type {MessageElementBase, MessageTextElement};
+function MessageSet(MessageElementBase, MessageTextElement): number|string|true{
+ while (MessageElementBase && MessageTextElement){
+  MessageElementBase = MessageElementBase;
+  MessageTextElement = MessageTextElement;
+  return 0;
+ }
+}
+
+export type CoreMessages = MessageElementBase | MessageTextElement;
